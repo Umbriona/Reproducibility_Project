@@ -1,0 +1,8 @@
+
+.Makefile.swp
+
+# Data
+**/data
+
+# Results
+**/results
