@@ -67,7 +67,7 @@ class TestUtilsPfam(unittest.TestCase):
         DF_PFAM = pd.read_table(PFAM_FILE)
         DF_DEGREE_PFAM = utils.add_pfam2frames(DF_PFAM, DF_DEGREE_HIGH)
         
-        self.assertEqual(4, len(DF_DEGREE_PFAM.keys()))
+        self.assertEqual(5, len(DF_DEGREE_PFAM.keys()))
         self.assertFalse(any(list(DF_DEGREE_PFAM.isna()["Pfam IDs"])))
         
         
