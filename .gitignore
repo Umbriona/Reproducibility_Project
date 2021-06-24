@@ -6,3 +6,12 @@
 
 # Results
 **/results
+
+# compiled modules
+**/__pycache__
+
+
+# checpoints
+
+*.swp
+*_checkpoints
