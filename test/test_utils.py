@@ -4,8 +4,8 @@ import pandas as pd
 from src import utils
 
 # Define (static variables)
-INTERACTION_FILE = "data/9606.protein.links.v11.0.txt" 
-PFAM_FILE = "data/proteins_w_domains.txt"
+INTERACTION_FILE = "data/protein_links.txt"
+PFAM_FILE = "data/protein_domains.txt"
 CONDITION_CONECTION = 500
 CONDITION_DEGREE = 100
 
