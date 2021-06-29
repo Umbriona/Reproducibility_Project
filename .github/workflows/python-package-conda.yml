@@ -24,7 +24,7 @@ jobs:
         
     - name: Make
       run: |
-        make
+        make Data
         
     - name: Test with Unittesting
       run: |
