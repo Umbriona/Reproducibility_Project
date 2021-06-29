@@ -1,4 +1,4 @@
-name: graph
+name: base
 channels:
   - defaults
 dependencies:
@@ -9,4 +9,4 @@ dependencies:
   - matplotlib
   - seaborn
   - jupyterlab
-prefix: /home/sandra/anaconda3/envs/graph
+
