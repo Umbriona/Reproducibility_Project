@@ -19,4 +19,5 @@ The dependencies can be managed in environment.yml
 ## Results
 As can be seen in the plot the proteins that have more registerd interactions also have more registerd pfam domains on average.
 The proteins that had no registerd pfam domains was excluded from the statistics.
+New results are saved in results directory.
 ![alt text](boxplot.png "Boxplot")
