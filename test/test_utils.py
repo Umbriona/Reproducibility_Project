@@ -1,4 +1,6 @@
-import os
+import os, sys
+path_utils = os.path.dirname(os.getcwd())
+sys.path.append(path_utils)
 import unittest
 import pandas as pd
 from src import utils

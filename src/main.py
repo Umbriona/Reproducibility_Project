@@ -1,6 +1,6 @@
 import argparse
 import pandas as pd
-import src.utils as utils
+import utils
 
 parser = argparse.ArgumentParser(""" """)
 parser.add_argument('-d', "--connection_data", type=str, required = True)

@@ -1,15 +1,20 @@
-DATA_DIR=data/
+DATA_DIR=/data/
+RESULT_DIR=/results/
 
 #Files
 PROTEIN_DOMAINS = protein_domains.txt
 PROTEIN_INTERACTIONS = protein_links.txt
 
+all: boxplot.png
+
+# setup data files and results directory
 .PHONY: Data
 Data:
+	mkdir -p results
 	bash src/download_data.sh
 
 boxplot.png: Data
-	python -m src.main -d $(DATA_DIR)$(PROTEIN_INTERACTIONS) -p $(DATA_DIR)$(PROTEIN_DOMAINS)
+	singularity exec --bind data:/data,src:/src,results:/results image.sif python /src/main.py -d $(DATA_DIR)$(PROTEIN_INTERACTIONS) -p $(DATA_DIR)$(PROTEIN_DOMAINS) -o $(RESULT_DIR)boxplot.png
 
 .PHONY: clean
 clean:

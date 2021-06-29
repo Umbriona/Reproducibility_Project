@@ -1,0 +1,15 @@
+Bootstrap: docker
+From: continuumio/miniconda
+
+%files
+    requirements.txt
+    
+%post
+    pwd
+    mkdir -p /data
+    mkdir -p /src
+    mkdir -p /results
+    /opt/conda/bin/conda install -y --file requirements.txt 
+
+%runscript
+    exec "$@"

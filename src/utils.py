@@ -63,7 +63,7 @@ def add_pfam2frames(df_pfam, df_degree, label = "High"):
     return df_degree
 
 
-def plot_stat(df_pfam_highlow, file, args):
+def plot_stat(df_pfam_highlow, file):
     
     plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
     plt.rc('axes', titlesize=MEDIUM_SIZE)     # fontsize of the axes title
