@@ -1,5 +1,6 @@
 # Reproducibility project
 In this project we try to answer whether proteins with a large number of interactions also have a larger amount of registered pfam domains.
+![example workflow](https://github.com/Umbriona/Reproducibility_Project/actions/workflows/python-package-conda.yml/badge.svg)
 
 ## Requirements
 
